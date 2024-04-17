@@ -19,7 +19,12 @@ set('exclude', [
   '/var',
   '/vendor',
   '/assets',
-  '/system',
+  '/system/cache',
+  '/system/logs',
+  '/system/modules',
+  '/system/themes',
+  '/system/tmp',
+  '/system/initialize.php',
   '/{{public_path}}/bundles',
   '/{{public_path}}/assets',
   '/{{public_path}}/files',
@@ -29,6 +34,7 @@ set('exclude', [
   '/{{public_path}}/preview.php',
   '/{{public_path}}/robots.txt',
 ]);
+
 
 set('rsync', function () {
   return [
